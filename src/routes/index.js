@@ -4,6 +4,7 @@ import Router from 'vue-router';
 import List from '@/components/board/List';
 import Index from '@/components/MovieIndexPage'
 import Show from '@/components/MovieShowPage'
+import SignUp from '@/components/SignUp'
 
 Vue.use(Router);
 
@@ -25,6 +26,11 @@ export default new Router({
             path:'/board/list',
             name:List,
             component:List
+        },
+        {
+            path:'/signup',
+            name:SignUp,
+            component:SignUp
         }
     ]
 })
